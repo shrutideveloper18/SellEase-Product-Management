@@ -4,7 +4,7 @@ A simple web app where sellers can **add product name, price & image URL**, and 
 Built using **HTML, CSS & JavaScript** — focusing on DOM manipulation and form handling.
 
 ---
-## Live Preview:
+## Live Preview: https://shrutideveloper18.github.io/SellEase-Product-Management/
 
 ---
 ##  Features
