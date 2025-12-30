@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SellEase</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Baloo+Bhai+2:wght@400..800&family=Poppins:wght@300;400;500;600;700&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+    <img src="images/background.jpg" alt="Background" id="bgimg">
+
+    <div class="content">
+        <div class="header">
+            <h1 class="hover-underline">SellEase</h1>
+        </div>
+        
+
+        <div class="container">
+            <div class="productbox">
+                
+                <div class="products">
+                    <img src="images/p1.png" alt="">
+                    <div class="details">
+                        <p class="name">Headphones</p>
+                        <p class="price">₹1200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sellerbox">
+                <h2>Enter product's name:</h2>
+                <input type="text" id="productname">
+                <h2>Enter product's price:</h2>
+                <input type="text" id="productprice">
+                <h2>Enter product's image url</h2>
+                <input type="text" id="productimg">
+                <button class="btn liquid" id="addproductbtn">Add product</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

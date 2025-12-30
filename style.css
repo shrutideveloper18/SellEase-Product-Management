@@ -1,0 +1,180 @@
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Poppins, sans-serif;
+    }
+
+    #bgimg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 200px;
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Tagesschrift", system-ui;
+        font-weight: 400;
+        color: white;
+        font-size: 55px;
+        margin: 0;
+    }
+
+    .hover-underline {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+    }
+
+    .hover-underline::after,
+    .hover-underline::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #ff0000, #00ffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-out;
+    }
+
+    .hover-underline::before {
+        top: -5px;
+    }
+
+    .hover-underline:hover::after,
+    .hover-underline:hover::before {
+        transform: scaleX(1);
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .productbox {
+        height: 700px;
+        border: 2px solid black;
+        width: 1000px;
+        background-color: white;
+        border-radius: 7px;
+    }
+
+    .sellerbox {
+        height: 400px;
+        width: 350px;
+        border: 2px solid white;
+        backdrop-filter: blur(18px);
+        border-radius: 7px;
+    }
+
+    .productbox {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+
+    .products {
+        border: 2px solid rgba(37, 7, 108, 0.25);
+        ;
+        width: 300px;
+        height: 300px;
+        padding: 2px;
+        margin: 10px;
+        border-radius: 6px;
+
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        border-radius: 6px;
+    }
+
+    .products .details {
+        display: flex;
+        justify-content: space-between;
+        /* Name left, price right */
+        align-items: center;
+        padding: 0px;
+        font-size: 18px;
+    }
+    .products:hover {
+  /* Lifts the card up by 7 pixels */
+  transform: translateY(-7px);
+  /* Makes the shadow larger and more pronounced for depth */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+    .sellerbox {
+        padding: 5px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 300px;
+        height: 20px;
+    }
+
+    h2 {
+        font-family: "Tagesschrift", system-ui;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+    .btn {
+        position: relative;
+        font-family: "Tagesschrift", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+
+        border: 2px solid #646cff;
+        border-radius: 8px;
+        margin-top: 30px;
+        align-self: center;
+        height: 50px;
+        width: 200px;
+        color: white;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .liquid {
+        background: linear-gradient(#D21CFF 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+        transition: 0.3s var(--t, 0s),
+            background-position 0.3s calc(0.3s - var(--t, 0s));
+    }
+
+    .liquid:hover {
+        --p: 100%;
+        --t: 0.3s;
+        color: #fff;
+    }
